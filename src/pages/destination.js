@@ -3,11 +3,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = () => (
+const Destination = () => (
   <Layout>
     <SEO title="Page two" />
-    <h>Images</h>
+    <h1>Destination</h1>
   </Layout>
 )
 
-export default SecondPage
+export default Destination
