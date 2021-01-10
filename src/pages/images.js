@@ -3,11 +3,13 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Images = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h1>Images</h1>
-  </Layout>
-)
+function images() {
+  return (
+    <Layout>
+      <SEO title="Page two" />
+      <h1>Images</h1>
+    </Layout>
+  )
+}
 
-export default Images
+export default images
