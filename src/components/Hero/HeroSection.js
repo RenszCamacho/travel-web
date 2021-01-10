@@ -38,6 +38,6 @@ export const HeroDescription = styled.p`
   }
 `
 
-export const HeroButton = styled.button`
+export const HeroButton = styled.div`
   margin-top: 32px;
 `
