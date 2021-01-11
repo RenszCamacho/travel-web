@@ -2,6 +2,7 @@ import React from "react"
 
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import "./ImagesSection.css"
 
 function Images() {
   const data = useStaticQuery(graphql`
@@ -26,13 +27,13 @@ function Images() {
     }
   `)
   return (
-    <div>
+    <div className="image-container">
       <h1>View our Destination</h1>
-      <div>
+      <div className="image-grid">
         {data.allFile.edges.map((image, key) => (
           <Img
             key={key}
-            className="imagen-item"
+            className="image-item"
             fluid={image.node.childImageSharp.fluid}
             alt={image.node.base.split(".")[0]}
           />
